@@ -1,1 +1,3 @@
-SELECT * FROM EMPLOYEE WHERE Title LIKE '%Support%';
+SELECT *
+FROM EMPLOYEE
+WHERE Title LIKE '%Support%';
