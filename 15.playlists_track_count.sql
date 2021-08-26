@@ -5,4 +5,4 @@
 SELECT PlayList.PlayListId, PlayList.Name, COUNT(PlayListTrack.TrackId)
 FROM PlayList
 JOIN PlayListTrack ON PlayListTrack.PlayListId=PlayList.PlayListId
-GROUP BY PlayList.PlayListId
+GROUP BY PlayList.PlayListId;
