@@ -3,8 +3,3 @@
 -- The total number of line items on each invoice
 
 
-SELECT
-InvoiceId,
-COUNT (InvoiceId) AS LineItemCount
-FROM InvoiceLine
-GROUP BY InvoiceId;
