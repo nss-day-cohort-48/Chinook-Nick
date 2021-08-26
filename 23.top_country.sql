@@ -1,0 +1,2 @@
+-- Which country's customers spent the most?
+-- HINT: Use the MAX function on a subquery.
