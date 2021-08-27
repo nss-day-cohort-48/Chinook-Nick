@@ -1,10 +1,10 @@
 -- Which sales agent made the most in sales over all?
 
-select max(total_sales), fullname
-from (select sum(invoice.total) as total_sales, 
-    employee.firstname ||' '|| employee.lastname as fullname
-from employee
-join customer on customer.supportrepid=employee.employeeid
-join invoice on invoice.customerid=customer.customerid
+SELECT max(Total_sales), FullName
+FROM (SELECT sum(Invoice.Total) as Total_Sales, 
+    Employee.FirstName ||' '|| Employee.LastName as FullName
+FROM Employee
+JOIN Customer on Customer.SupportrepId=Employee.EmployeeId
+JOIN Invoice on Invoice.CustomerId=Customer.CustomerId
 -- where InvoiceDate between '2009-01-01' and '2009-12-31'
-group by employee.FirstName)
+GROUP BY Employee.FirstName)
